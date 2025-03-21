@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 5: Xếp loại học lực</h3>
+<button onclick="checkGrade()">Xếp loại</button>
+</body>
+<script>
+    function checkGrade() {
+        let test = parseFloat(prompt("Nhập điểm bài kiểm tra:"));
+        let mid = parseFloat(prompt("Nhập điểm thi giữa kỳ:"));
+        let final = parseFloat(prompt("Nhập điểm thi cuối kỳ:"));
+
+        let avg = (test + mid + final) / 3;
+
+        if (avg >= 8) {
+            alert("Học lực: Giỏi");
+        } else if (avg >= 6.5) {
+            alert("Học lực: Khá");
+        } else if (avg >= 5) {
+            alert("Học lực: Trung bình");
+        } else {
+            alert("Học lực: Yếu");
+        }
+    }
+</script>
+</html>

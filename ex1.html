@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1: Kiểm tra a chia hết cho b</h3>
+<button onclick="checkDivisible()">Kiểm tra</button>
+</body>
+<script>
+    function checkDivisible() {
+        let a = parseInt(prompt("Nhập số a:"));
+        let b = parseInt(prompt("Nhập số b:"));
+
+        if (b === 0) {
+            alert("Không thể chia cho 0");
+        } else if (a % b === 0) {
+            alert(a + " chia hết cho " + b);
+        } else {
+            alert(a + " không chia hết cho " + b);
+        }
+    }
+</script>
+</html>

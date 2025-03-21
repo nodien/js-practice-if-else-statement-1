@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 7: Tính cước điện thoại</h3>
+<button onclick="calculatePhoneBill()">Tính cước</button>
+</body>
+<script>
+    function calculatePhoneBill() {
+        let minutes = parseInt(prompt("Nhập số phút đã gọi:"));
+        let pricePerMinute = 500; // 500 VNĐ mỗi phút
+        let baseCharge = 25000; // Phí thuê bao cố định
+
+        let totalCharge = baseCharge + (minutes * pricePerMinute);
+
+        alert("Tổng cước điện thoại: " + totalCharge.toLocaleString('vi-VN') + " VNĐ");
+    }
+</script>
+</html>

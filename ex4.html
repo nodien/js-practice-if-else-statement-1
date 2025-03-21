@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 4: Tìm số lớn nhất</h3>
+<button onclick="findMax()">Tìm số lớn nhất</button>
+</body>
+<script>
+    function findMax() {
+        let a = parseInt(prompt("Nhập số thứ nhất:"));
+        let b = parseInt(prompt("Nhập số thứ hai:"));
+        let c = parseInt(prompt("Nhập số thứ ba:"));
+
+        let max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+
+        alert("Số lớn nhất là: " + max);
+    }
+</script>
+</html>
